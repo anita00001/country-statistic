@@ -1,0 +1,9 @@
+.list-countries-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 2rem;
+}
+
+.list-countries {
+  border: 1px solid blue;
+}
