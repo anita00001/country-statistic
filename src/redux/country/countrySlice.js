@@ -14,7 +14,16 @@ export const fetchCountryList = createAsyncThunk(
     try {
       const response = await fetch(url);
       const result = await response.json();
-      return result.data;
+      const data = result.map((item) => ({
+        name: item.name.common,
+        capital: item.capital,
+        continent: item.continents[0],
+        flag: item.flags.png,
+        population: item.population,
+        map: item.maps.googleMaps,
+        area: item.area,
+      }));
+      return data;
     } catch {
       return thunkAPI.rejectWithValue('Error fetching country list');
     }
@@ -27,19 +36,22 @@ const countrySlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchCountryList.pending, (state) => {
-        state.status = 'loading';
-      })
+      .addCase(fetchCountryList.pending, (state) => ({
+        ...state,
+        status: 'loading',
+      }))
 
-      .addCase(fetchCountryList.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.countryList = action.payload;
-      })
+      .addCase(fetchCountryList.fulfilled, (state, action) => ({
+        ...state,
+        status: 'succeeded',
+        countryList: action.payload,
+      }))
 
-      .addCase(fetchCountryList.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.payload;
-      });
+      .addCase(fetchCountryList.rejected, (state, action) => ({
+        ...state,
+        status: 'failed',
+        error: action.payload,
+      }));
   },
 });
 
