@@ -18,10 +18,13 @@ export const fetchCountryList = createAsyncThunk(
         name: item.name.common,
         capital: item.capital,
         continent: item.continents[0],
+        subregion: item.subregion,
         flag: item.flags.png,
         population: item.population,
         map: item.maps.googleMaps,
         area: item.area,
+        location: item.latlng,
+        timezones: item.timezones[0],
       }));
       return data;
     } catch {
