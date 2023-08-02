@@ -1,13 +1,24 @@
+import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchCountryList } from '../redux/country/countrySlice';
+
 import Countries from './Countries';
+import CountryInfo from './CountryInfo';
 import '../styles/App.css';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCountryList());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Countries />
-      </header>
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Countries />} />
+      <Route path="/country/:name" element={<CountryInfo />} />
+    </Routes>
   );
 }
 
