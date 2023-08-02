@@ -1,0 +1,18 @@
+.nav-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3460c74f;
+  color: #3460c7f8;
+  padding: 0 1rem;
+  border-bottom: 2px solid #3460c7;
+  border-top: 2px solid #3460c7;
+}
+
+.nav-bar-wrapper > h3 {
+  width: 60%;
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0;
+}

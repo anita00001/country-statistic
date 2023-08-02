@@ -1,0 +1,97 @@
+.country-info-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3460c7f8;
+  background-color: #f2f3f7;
+}
+
+.info-page-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #3460c74f;
+  border-bottom: 2px solid #3460c7;
+  border-top: 2px solid #3460c7;
+}
+
+.country-name {
+  width: 50%;
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: end;
+}
+
+.country-info-wrap {
+  width: 85%;
+}
+
+.country-info-wrap > .national-flag {
+  width: 100%;
+  height: 12rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 4px 8px rgba(16, 90, 122, 0.897);
+}
+
+.info-table {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(16, 90, 122, 0.897);
+}
+
+.info-table > tbody > tr > td {
+  padding: 0.1rem 1rem;
+  width: 50%;
+  font-size: 0.7rem;
+  background-color: #3460c74f;
+  border: 1px solid #3460c7;
+}
+
+.country-recommend {
+  width: 80%;
+  padding: 0.5rem 1.75rem;
+  font-size: 1.2rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+  background-color: #3460c74f;
+  border: 2px solid #3460c7;
+}
+
+.recom-country-wraper {
+  width: 80%;
+  padding: 0 1.75rem;
+  background-color: #3460c74f;
+  margin-bottom: 3rem;
+}
+
+.recom-country-wraper a {
+  text-decoration: none;
+  color: #3460c7f8;
+}
+
+.recom-details {
+  margin: 0.5rem 0;
+  background-color: #3460c74f;
+  border-bottom: 2px solid #3460c7;
+}
+
+.recom-country-name {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.recom-country-flag {
+  width: 1.5rem;
+  height: 1rem;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+}
