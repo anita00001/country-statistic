@@ -6,11 +6,21 @@ const CountryInfo = () => {
 
   const country = useSelector((state) => state.country.countryList);
   const getCountry = country.find((c) => c.name === name);
-  console.log(getCountry);
+  // console.log(getCountry);
 
   if (!getCountry) {
     return <div>Country not found!</div>;
   }
+
+  const recommendedCountries = () => {
+    const recommend = country.filter(
+      (c) => c.name !== getCountry.name
+        && c.continent === getCountry.continent,
+    );
+    return recommend.slice(0, 5);
+  };
+
+  const getRecCountries = recommendedCountries();
 
   return (
     <div>
@@ -24,6 +34,18 @@ const CountryInfo = () => {
         Population:
         {getCountry.population}
       </p>
+      <h3>See More Countries</h3>
+      {getRecCountries.length === 0 ? (
+        <p>No recommended countries</p>
+      ) : (
+        getRecCountries.map((c) => (
+          <div key={c.name}>
+            <Link to={`/country/${c.name}`}>
+              <p>{c.name}</p>
+            </Link>
+          </div>
+        ))
+      )}
     </div>
   );
 };
