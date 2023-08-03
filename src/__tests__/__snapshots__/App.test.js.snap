@@ -96,6 +96,7 @@ exports[`App component App component matches snapshot 1`] = `
     >
       <div
         className="list-countries"
+        data-testid="country-item"
       >
         <a
           href="/country/Country 1"
@@ -124,6 +125,7 @@ exports[`App component App component matches snapshot 1`] = `
       </div>
       <div
         className="list-countries"
+        data-testid="country-item"
       >
         <a
           href="/country/Country 2"

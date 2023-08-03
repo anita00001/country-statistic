@@ -25,10 +25,6 @@ const initialState = {
 };
 const store = mockStore(initialState);
 
-// jest.mock('../redux/country/countrySlice', () => ({
-//   fetchCountryList: jest.fn(),
-// }));
-
 describe('App component', () => {
   test('renders App component: Countries component', () => {
     render(
