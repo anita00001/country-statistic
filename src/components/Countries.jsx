@@ -55,7 +55,7 @@ const Countries = () => {
         <div className="list-countries-wrapper">
           {/* List of Countries */}
           {filteredCountries.map((item) => (
-            <div key={item.name} className="list-countries">
+            <div key={item.name} className="list-countries" data-testid="country-item">
               <Link to={`/country/${item.name}`}>
                 <img src={item.flag} alt="national flag" className="national-flag" />
                 <h3 className="country-name-display">{item.name}</h3>
