@@ -4,10 +4,9 @@ import { Provider } from 'react-redux';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import '@testing-library/jest-dom/extend-expect'; // for toBeInTheDocument()
+import '@testing-library/jest-dom/extend-expect';
 
 import App from '../components/App';
-import Countries from '../components/Countries';
 import CountryInfo from '../components/CountryInfo';
 
 const middlewares = [thunk];
@@ -16,8 +15,12 @@ const mockStore = configureStore(middlewares);
 const initialState = {
   country: {
     countryList: [
-      { name: 'Country 1', capital: 'Capital 1', flag: 'Flag 1', population: 1000, location: [10, 20] },
-      { name: 'Country 2', capital: 'Capital 2', flag: 'Flag 2', population: 2000, location: [30, 40] },
+      {
+        name: 'Country 1', capital: 'Capital 1', flag: 'Flag 1', population: 1000, location: [10, 20],
+      },
+      {
+        name: 'Country 2', capital: 'Capital 2', flag: 'Flag 2', population: 2000, location: [30, 40],
+      },
     ],
     status: 'idle',
     error: null,
@@ -32,7 +35,7 @@ describe('App component', () => {
         <MemoryRouter initialEntries={['/']}>
           <App />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByText('Countries')).toBeInTheDocument();
@@ -47,7 +50,7 @@ describe('App component', () => {
             <Route path="/country/:name" element={<CountryInfo getCountry={initialState} />} />
           </Routes>
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     const countryNameRegex = new RegExp(countryName, 'i');
@@ -75,7 +78,7 @@ describe('App component', () => {
         <MemoryRouter>
           <App />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     waitFor(() => expect(store.dispatch).toHaveBeenCalledTimes(1));
@@ -87,7 +90,7 @@ describe('App component', () => {
         <MemoryRouter>
           <App />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     ).toJSON();
 
     expect(tree).toMatchSnapshot();

@@ -2,16 +2,22 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import configureMockStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
-import { MemoryRouter} from 'react-router-dom';
-import Countries from '../components/Countries';
+import { MemoryRouter } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
+import Countries from '../components/Countries';
 
 const mockStore = configureMockStore();
 
 const countryList = [
-  { name: 'Country 1', capital: 'Capital 1', flag: 'Flag 1', population: 1000, location: [10, 20], continent: 'Continent 1' },
-  { name: 'Country 2', capital: 'Capital 2', flag: 'Flag 2', population: 2000, location: [30, 40], continent: 'Continent 2' },
-  { name: 'Country 3', capital: 'Capital 3', flag: 'Flag 3', population: 3000, location: [50, 60], continent: 'Continent 1'}
+  {
+    name: 'Country 1', capital: 'Capital 1', flag: 'Flag 1', population: 1000, location: [10, 20], continent: 'Continent 1',
+  },
+  {
+    name: 'Country 2', capital: 'Capital 2', flag: 'Flag 2', population: 2000, location: [30, 40], continent: 'Continent 2',
+  },
+  {
+    name: 'Country 3', capital: 'Capital 3', flag: 'Flag 3', population: 3000, location: [50, 60], continent: 'Continent 1',
+  },
 ];
 
 describe('Countries component', () => {
@@ -24,7 +30,7 @@ describe('Countries component', () => {
     render(
       <Provider store={store}>
         <Countries />
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByText('Countries')).toBeInTheDocument();
@@ -41,7 +47,7 @@ describe('Countries component', () => {
         <MemoryRouter>
           <Countries />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     const countryItems = await screen.findAllByTestId('country-item');
@@ -59,7 +65,7 @@ describe('Countries component', () => {
         <MemoryRouter>
           <Countries />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     const dropdown = screen.getByRole('combobox');
@@ -79,7 +85,7 @@ describe('Countries component', () => {
         <MemoryRouter>
           <Countries />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     const searchInput = screen.getByPlaceholderText('Search country by name');

@@ -1,4 +1,4 @@
-import {render} from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import NavBar from '../components/NavBar';
 
@@ -18,7 +18,7 @@ jest.useFakeTimers();
 
 describe('NavBar component', () => {
   test('renders NavBar component: Heading', () => {
-    const {getByText} = render(<NavBar />);
+    const { getByText } = render(<NavBar />);
 
     const heading = getByText('statistics');
     expect(heading).toBeInTheDocument();
@@ -30,13 +30,13 @@ describe('NavBar component', () => {
     expect(timeElement).toBeInTheDocument();
   });
 
-  test ('renders Navbar component: Microphone Icon', () => {
+  test('renders Navbar component: Microphone Icon', () => {
     const { queryByTestId } = render(<NavBar />);
     const microphoneElement = queryByTestId('microphone-icon');
     expect(microphoneElement).toBeInTheDocument();
   });
 
-  test ('renders Navbar component: Setting Icon', () => {
+  test('renders Navbar component: Setting Icon', () => {
     const { queryByTestId } = render(<NavBar />);
     const settingElement = queryByTestId('setting-icon');
     expect(settingElement).toBeInTheDocument();

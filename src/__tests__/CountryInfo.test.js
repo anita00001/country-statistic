@@ -1,10 +1,9 @@
-import {render, screen} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import CountryInfo from '../components/CountryInfo';
-import { GiReturnArrow } from 'react-icons/gi';
 
 const mockStore = configureMockStore();
 
@@ -44,7 +43,7 @@ const countryList = [
   },
 ];
 
-const store = mockStore({country: {countryList}});
+const store = mockStore({ country: { countryList } });
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
@@ -60,11 +59,11 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
-    expect(screen.getByText('Country 1', {selector: 'h3.country-name'})).toBeInTheDocument();
-    expect(screen.getByText('Country 3', { selector: 'p.recom-country-name'})).toBeInTheDocument();
+    expect(screen.getByText('Country 1', { selector: 'h3.country-name' })).toBeInTheDocument();
+    expect(screen.getByText('Country 3', { selector: 'p.recom-country-name' })).toBeInTheDocument();
     expect(screen.getByText('See More Countries')).toBeInTheDocument();
   });
 
@@ -74,7 +73,7 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByText('Capital')).toBeInTheDocument();
@@ -87,7 +86,7 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByText('Population')).toBeInTheDocument();
@@ -100,7 +99,7 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByText('Area')).toBeInTheDocument();
@@ -113,7 +112,7 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByText('Location')).toBeInTheDocument();
@@ -126,7 +125,7 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(screen.getByText('Time Zone')).toBeInTheDocument();
@@ -139,13 +138,12 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     const FlagImage = screen.getByTestId('flag-image');
     expect(FlagImage).toBeInTheDocument();
     expect(FlagImage).toHaveAttribute('src', 'flag1.png');
-
   });
 
   test('renders CountryInfo component: Return Icon', () => {
@@ -154,7 +152,7 @@ describe('CountryInfo component', () => {
         <MemoryRouter>
           <CountryInfo />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     const ReturnIcon = screen.getByTestId('return-arrow');
@@ -163,6 +161,4 @@ describe('CountryInfo component', () => {
     const PathElement = ReturnIcon.querySelector('path');
     expect(PathElement).toBeInTheDocument();
   });
-
-
 });
