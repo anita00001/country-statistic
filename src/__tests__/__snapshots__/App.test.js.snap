@@ -5,11 +5,14 @@ exports[`App component App component matches snapshot 1`] = `
   <div
     className="nav-bar-wrapper"
   >
-    <p />
+    <p
+      data-testid="time-element"
+    />
     <h3>
       statistics
     </h3>
     <svg
+      data-testid="microphone-icon"
       fill="currentColor"
       height="1em"
       stroke="currentColor"
@@ -28,6 +31,7 @@ exports[`App component App component matches snapshot 1`] = `
       />
     </svg>
     <svg
+      data-testid="setting-icon"
       fill="none"
       height="1em"
       stroke="currentColor"

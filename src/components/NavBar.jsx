@@ -14,10 +14,10 @@ const NavBar = () => {
   return (
     <>
       <div className="nav-bar-wrapper">
-        <p>{time}</p>
+        <p data-testid="time-element">{time}</p>
         <h3>statistics</h3>
-        <FaMicrophone />
-        <FiSettings />
+        <FaMicrophone data-testid="microphone-icon" />
+        <FiSettings data-testid="setting-icon" />
       </div>
     </>
   );
