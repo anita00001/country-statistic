@@ -32,7 +32,8 @@
 
 # 📖 Statistics 0f Countries <a name="about-project"></a>
 
-> This is an React app that fetch country's data from external API and display the country name when the app loads. When a user clicks on the country card, it displays the statistics of the selected country. It also allows searching a country by its name, and sorting countries by its continent.
+> This is a React app that fetches the country's data from an external API and displays the country name when the app loads. When a user clicks on the country card, it displays the statistics of the selected country. It also allows searching for a country by its name and sorting countries by their continent.
+> [Click here](https://drive.google.com/drive/search?q=video-country-stat) for more details.
 
 ## 🛠 Built With <a name="#built-with"></a>
 > React <br>
@@ -85,9 +86,9 @@
 > - Display country's national flag on card
 > - Display country's area on card
 > - Search a country by its name
-> - Filter countries by its continent
-> - Display country's detail informations on another page
-> - Recommend five countries that are on the same continent on a country's detail information page
+> - Filter countries by their continent
+> - Display country's detailed informations on another page
+> - Recommend five countries that are on the same continent on a country's detailed information page
 > - Implement React icon to return to the main page 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -163,7 +164,7 @@ Find the guide [here](https://github.com/microverseinc/linters-config/tree/maste
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-> - Add action for microphone icon
+> - Add action for the microphone icon
 > - Add action for setting icon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
