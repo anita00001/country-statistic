@@ -33,7 +33,7 @@
 # 📖 Statistics 0f Countries <a name="about-project"></a>
 
 > This is a React app that fetches the country's data from an external API and displays the country name when the app loads. When a user clicks on the country card, it displays the statistics of the selected country. It also allows searching for a country by its name and sorting countries by their continent.
-> [Click here](https://drive.google.com/drive/search?q=video-country-stat) for more details.
+> [Click here](https://drive.google.com/file/d/1QKiu0nmpFZeMdhakS2x0mmiwvHqFJTwK/view?usp=drive_link) for more details.
 
 ## 🛠 Built With <a name="#built-with"></a>
 > React <br>
