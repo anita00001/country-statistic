@@ -1,0 +1,109 @@
+.country-page-top {
+  position: relative;
+}
+
+.world-map-img {
+  width: 100%;
+  height: 12rem;
+}
+
+.search-bar {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 30%;
+  text-align: center;
+  padding: 1rem;
+  outline: none;
+  background: none;
+  border: 1px solid #3460c7;
+}
+
+.search-bar::placeholder {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.country-page-center {
+  margin-top: -0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 3rem;
+  border-bottom: 2px solid #3460c7;
+  border-top: 2px solid #3460c7;
+  background-color: #112d71;
+}
+
+.country-page-center > h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.country-page-center > .dropdown {
+  width: 60%;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem;
+  outline: none;
+  background-color: #112d71;
+  border: 1px solid #3460c7;
+}
+
+.list-countries-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  background-color: #112d71;
+}
+
+.list-countries {
+  text-align: center;
+  width: 50%;
+  height: 11rem;
+}
+
+.list-countries:nth-child(8n+1),
+.list-countries:nth-child(8n+4),
+.list-countries:nth-child(8n+5),
+.list-countries:nth-child(8n+8) {
+  background-color: rgba(16, 90, 122, 0.9);
+}
+
+.list-countries:nth-child(8n+2),
+.list-countries:nth-child(8n+3),
+.list-countries:nth-child(8n+6),
+.list-countries:nth-child(8n+7) {
+  background-color: rgba(16, 90, 122, 0.5);
+}
+
+.list-countries a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list-countries a:visited {
+  color: #fff;
+}
+
+.national-flag {
+  margin-top: 0.2rem;
+  width: 5rem;
+  height: 4rem;
+}
+
+.country-name-display {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.continent-name {
+  font-size: 0.8rem;
+  margin: 0.1rem;
+}
+
+.country-area {
+  font-size: 0.8rem;
+}

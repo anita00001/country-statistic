@@ -1,39 +1,8 @@
 <a name="readme-top"></a>
 
-<!--
-!!! IMPORTANT !!!
-This README is an example of how you could professionally present your codebase. 
-Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
-
-You should modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
-
-For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h1><b>Statistics of Countries</b></h1>
 
 </div>
 
@@ -45,192 +14,158 @@ For more information on the importance of a professional README for your reposit
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+    - [🚀 Live Demo ](#-live-demo-)
 - [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Statistics 0f Countries <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This is a React app that fetches the country's data from an external API and displays the country name when the app loads. When a user clicks on the country card, it displays the statistics of the selected country. It also allows searching for a country by its name and sorting countries by their continent.
+> [Click here](https://drive.google.com/file/d/1QKiu0nmpFZeMdhakS2x0mmiwvHqFJTwK/view?usp=drive_link) for more details.
 
-**[your_project__name]** is a...
+## 🛠 Built With <a name="#built-with"></a>
+> React <br>
+> Redux <br>
+> CSS
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
+### 🛠 Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>React</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://react.dev/learn">React Quick Start</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Redux</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://react-redux.js.org/tutorials/quick-start">Redux Quick Start</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+  <summary>JavaScript</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.javascripttutorial.net/javascript-dom/document-object-model-in-javascript/">DOM in JavaScript</a></li>
   </ul>
 </details>
+
+<details>
+  <summary>NodeJS</summary>
+  <ul>
+    <li><a href="https://nodejs.org/en">Node.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>CSS</summary>
+  <ul>
+    <li><a href="https://html.com/css/#What_is_CSS">style.css</a></li>
+  </ul>
+</details>
+<br>
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+### Key Features <a name="#key-features"></a>
+> - Display current time on the main page 
+> - Displays country name on card
+> - Display country's national flag on card
+> - Display country's area on card
+> - Search a country by its name
+> - Filter countries by their continent
+> - Display country's detailed informations on another page
+> - Recommend five countries that are on the same continent on a country's detailed information page
+> - Implement React icon to return to the main page 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+### 🚀 Live Demo <a name="#live-demo"></a>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://country-statistic-u9yp.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
-To get a local copy up and running, follow these steps.
+> To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+> In order to run this project you need:
+> - Git bash
+> - Visual Code Studio
 
 ### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
+> Clone this repository to your desired folder:<br>
+> <code>cd your-folder</code>
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+git clone https://github.com/anita00001/country-statistic.git
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+> Installation dependency for linters check
+Find the guide [here](https://github.com/microverseinc/linters-config/tree/master/react-redux).
 
 ### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
+> Run the project on Visual Studio Code Live Server
 ```sh
-  rails server
+  npm install
 ```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm start
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+### Run tests
 
-## 👥 Authors <a name="authors"></a>
+> To run tests, run the following command:
 
-> Mention all of the collaborators of this project.
+> To check for css errors run:
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+> To check for js errors run:
+```sh
+  npx eslint "**/*.{js,jsx}"
+```
+> To run test:
+```sh
+  npm test
+```
 
-👤 **Author1**
+## 👥 Author <a name="authors"></a>
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+> 👤 **Anita Sharma**
+> - GitHub: [@anita00001](https://github.com/anita00001)
+> - LinkedIn: [anitaa-sharmaa](https://www.linkedin.com/in/anitaa-sharmaa/)
+> - Twitter: [@anitaa_sharmaa](https://twitter.com/anitaa_sharmaa)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+> - Add action for the microphone icon
+> - Add action for setting icon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,7 +175,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/anita00001/country-statistic/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +183,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project give it a rating.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,25 +191,9 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+> - I express my sincere gratitude to Microverse (microverse.org) for providing the necessary resources and knowledge.
+> - I am thankful to my Mentors and Code Reviewers who encourage me to optimize and make this project functional.
+> - I am honoured to the original designer [Nelson Sakwa](https://www.behance.net/sakwadesignstudio), who made the design available for free.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -284,8 +201,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+- This project is [MIT](./MIT) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
