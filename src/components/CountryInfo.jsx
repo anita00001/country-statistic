@@ -26,11 +26,11 @@ const CountryInfo = () => {
   return (
     <div className="country-info-page">
       <div className="info-page-top">
-        <Link to="/"><GiReturnArrow /></Link>
+        <Link to="/"><GiReturnArrow data-testid="return-arrow" /></Link>
         <h3 className="country-name">{getCountry.name}</h3>
       </div>
       <div className="country-info-wrap">
-        <img src={getCountry.flag} alt="national flag" className="national-flag" />
+        <img src={getCountry.flag} alt="national flag" className="national-flag" data-testid="flag-image" />
         <table className="info-table">
           <tbody>
             <tr>
