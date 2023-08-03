@@ -5,6 +5,7 @@ import { fetchCountryList } from '../redux/country/countrySlice';
 
 import Countries from './Countries';
 import CountryInfo from './CountryInfo';
+import '../styles/App.css';
 
 function App() {
   const dispatch = useDispatch();

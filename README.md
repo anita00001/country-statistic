@@ -192,6 +192,7 @@ If you like this project give it a rating.
 
 > - I express my sincere gratitude to Microverse (microverse.org) for providing the necessary resources and knowledge.
 > - I am thankful to my Mentors and Code Reviewers who encourage me to optimize and make this project functional.
+> - I am honoured to the original designer [Nelson Sakwa](https://www.behance.net/sakwadesignstudio), who made the design available for free.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
